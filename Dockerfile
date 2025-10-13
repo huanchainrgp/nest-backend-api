@@ -5,22 +5,22 @@ FROM node:22-alpine
 WORKDIR /app
 
 # Copy package files
-COPY package*.json ./
+COPY package.json yarn.lock ./
 
 # Install dependencies
-RUN npm ci --only=production
+RUN yarn install --frozen-lockfile
 
 # Copy source code
 COPY . .
 
-# Generate Prisma client
-RUN npx prisma generate
+# Generate Prisma client (already done in postinstall)
+# RUN yarn prisma:generate
 
 # Build the application
-RUN npm run build
+RUN yarn build
 
 # Expose port
 EXPOSE 3000
 
 # Start the application
-CMD ["npm", "run", "start:prod"]
+CMD ["yarn", "start:prod"]
