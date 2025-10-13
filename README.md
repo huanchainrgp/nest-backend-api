@@ -31,7 +31,7 @@ A comprehensive NestJS backend API with authentication, Prisma ORM, PostgreSQL d
 
 2. **Install dependencies**
    ```bash
-   npm install
+   yarn install
    ```
 
 3. **Environment Setup**
@@ -50,23 +50,23 @@ A comprehensive NestJS backend API with authentication, Prisma ORM, PostgreSQL d
 4. **Database Setup**
    ```bash
    # Generate Prisma client
-   npm run prisma:generate
+   yarn prisma:generate
    
    # Push schema to database
-   npm run prisma:push
+   yarn prisma:push
    
    # Or run migrations
-   npm run prisma:migrate
+   yarn prisma:migrate
    ```
 
 5. **Start the application**
    ```bash
    # Development mode
-   npm run start:dev
+   yarn start:dev
    
    # Production mode
-   npm run build
-   npm run start:prod
+   yarn build
+   yarn start:prod
    ```
 
 ## 📁 Project Structure
@@ -151,16 +151,16 @@ Once the application is running, you can access the Swagger documentation at:
 
 ```bash
 # Unit tests
-npm run test
+yarn test
 
 # E2E tests
-npm run test:e2e
+yarn test:e2e
 
 # Test coverage
-npm run test:cov
+yarn test:cov
 
 # Watch mode
-npm run test:watch
+yarn test:watch
 ```
 
 ### Test Structure
@@ -175,16 +175,16 @@ npm run test:watch
 
 ```bash
 # Generate Prisma client
-npm run prisma:generate
+yarn prisma:generate
 
 # Push schema changes to database
-npm run prisma:push
+yarn prisma:push
 
 # Create and run migrations
-npm run prisma:migrate
+yarn prisma:migrate
 
 # Open Prisma Studio (database GUI)
-npm run prisma:studio
+yarn prisma:studio
 ```
 
 ### Database Schema
@@ -245,25 +245,25 @@ NODE_ENV="production"
 ### Build for Production
 
 ```bash
-npm run build
-npm run start:prod
+yarn build
+yarn start:prod
 ```
 
 ## 📝 Available Scripts
 
 | Script | Description |
 |--------|-------------|
-| `npm run build` | Build the application |
-| `npm run start` | Start the application |
-| `npm run start:dev` | Start in development mode with hot reload |
-| `npm run start:debug` | Start in debug mode |
-| `npm run start:prod` | Start in production mode |
-| `npm run test` | Run unit tests |
-| `npm run test:watch` | Run tests in watch mode |
-| `npm run test:cov` | Run tests with coverage |
-| `npm run test:e2e` | Run e2e tests |
-| `npm run lint` | Run ESLint |
-| `npm run format` | Format code with Prettier |
+| `yarn build` | Build the application |
+| `yarn start` | Start the application |
+| `yarn start:dev` | Start in development mode with hot reload |
+| `yarn start:debug` | Start in debug mode |
+| `yarn start:prod` | Start in production mode |
+| `yarn test` | Run unit tests |
+| `yarn test:watch` | Run tests in watch mode |
+| `yarn test:cov` | Run tests with coverage |
+| `yarn test:e2e` | Run e2e tests |
+| `yarn lint` | Run ESLint |
+| `yarn format` | Format code with Prettier |
 
 ## 🤝 Contributing
 

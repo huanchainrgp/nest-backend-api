@@ -19,7 +19,7 @@ echo "✅ Node.js version: $(node -v)"
 
 # Install dependencies
 echo "📦 Installing dependencies..."
-npm install
+yarn install
 
 # Create .env file if it doesn't exist
 if [ ! -f .env ]; then
@@ -30,19 +30,19 @@ fi
 
 # Generate Prisma client
 echo "🗄️ Generating Prisma client..."
-npm run prisma:generate
+yarn prisma:generate
 
 # Push database schema
 echo "🗄️ Setting up database schema..."
-npm run prisma:push
+yarn prisma:push
 
 echo "✅ Setup complete!"
 echo ""
 echo "🚀 To start the application:"
-echo "   npm run start:dev"
+echo "   yarn start:dev"
 echo ""
 echo "📚 Swagger documentation will be available at:"
 echo "   http://localhost:3000/api"
 echo ""
 echo "🧪 To run tests:"
-echo "   npm run test"
+echo "   yarn test"

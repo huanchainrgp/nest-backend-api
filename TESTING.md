@@ -31,29 +31,29 @@ src/
 
 ```bash
 # Run all unit tests
-npm run test
+yarn test
 
 # Run tests in watch mode
-npm run test:watch
+yarn test:watch
 
 # Run tests with coverage
-npm run test:cov
+yarn test:cov
 
 # Run specific test file
-npm run test -- auth.service.spec.ts
+yarn test auth.service.spec.ts
 ```
 
 ### E2E Tests
 
 ```bash
 # Run all E2E tests
-npm run test:e2e
+yarn test:e2e
 
 # Run E2E tests with the helper script
 ./test/run-e2e.sh
 
 # Run specific E2E test file
-npm run test:e2e -- --testPathPattern=auth.e2e-spec.ts
+yarn test:e2e --testPathPattern=auth.e2e-spec.ts
 ```
 
 ## 📋 Test Coverage
@@ -177,7 +177,7 @@ After running tests with coverage, you can find detailed reports in the `coverag
 
 ```bash
 # Generate coverage report
-npm run test:cov
+yarn test:cov
 
 # Open coverage report in browser
 open coverage/lcov-report/index.html
@@ -189,13 +189,13 @@ open coverage/lcov-report/index.html
 
 ```bash
 # Run specific test
-npm run test:e2e -- --testNamePattern="should register a new user successfully"
+yarn test:e2e --testNamePattern="should register a new user successfully"
 
 # Run tests with verbose output
-npm run test:e2e -- --verbose
+yarn test:e2e --verbose
 
 # Run tests with debug output
-npm run test:e2e -- --detectOpenHandles
+yarn test:e2e --detectOpenHandles
 ```
 
 ### Test Debugging Tips
@@ -211,7 +211,7 @@ npm run test:e2e -- --detectOpenHandles
 ```
 Error: connect ECONNREFUSED 127.0.0.1:3000
 ```
-**Solution**: Start the application with `npm run start:dev`
+**Solution**: Start the application with `yarn start:dev`
 
 ### Database Connection Issues
 ```
