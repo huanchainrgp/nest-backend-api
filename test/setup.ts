@@ -26,3 +26,14 @@ afterAll(async () => {
   
   await prisma.$disconnect();
 });
+
+beforeEach(async () => {
+  // Clean up test data before each test
+  await prisma.user.deleteMany({
+    where: {
+      email: {
+        contains: 'test@example.com',
+      },
+    },
+  });
+});
